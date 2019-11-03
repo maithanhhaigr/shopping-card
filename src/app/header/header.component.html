@@ -1,0 +1,13 @@
+<header class="container">
+    <h1>Shopping Cart</h1>
+
+    <ul class="breadcrumb">
+      <li>Home</li>
+      <li>Shopping Cart</li>
+    </ul>
+
+    <span [class]="'count ' + className" *ngIf="totalItems > 0">{{totalItems}} items in the bag</span>
+    <!-- <div [class]="'count ' + className" *ngIf="totalItems > 5; then thenBlock else elseBlock"></div>
+    <ng-template #thenBlock>{{totalItems}} items in the bag. lon 5</ng-template>
+    <ng-template #elseBlock>{{totalItems}} items in the bag. nho 5</ng-template> -->
+  </header>
